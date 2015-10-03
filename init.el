@@ -1,6 +1,13 @@
 ;;++++++++++++++++++++++++++++++++++++++++
 ;; init.el
 ;;++++++++++++++++++++++++++++++++++++++++
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/configurations"))
 
 (require 'init-theme)
@@ -8,7 +15,7 @@
 (require 'init-layout)
 (require 'init-dired)
 (require 'init-org)
-(require 'init-yas)
+;; (require 'init-yas)
 (require 'init-shell)
 ;; (require 'init-matlab)
 (require 'init-ispell)
@@ -26,6 +33,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(display-time-mode t)
+ '(ispell-program-name "aspell")
+ '(menu-bar-mode nil)
  '(org-hide-leading-stars t)
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -36,6 +45,6 @@
  '(w32-lwindow-modifier (quote super) t)
  '(whitespace-style
    (quote
-	(tabs spaces trailing lines space-before-tab newline indentation empty space-after-tab space-mark tab-mark newline-mark))))
+    (tabs spaces trailing lines space-before-tab newline indentation empty space-after-tab space-mark tab-mark newline-mark))))
 
 (server-start)

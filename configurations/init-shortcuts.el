@@ -17,11 +17,12 @@
 (custom-set-variables
  '(w32-lwindow-modifier (quote super)))
 
-;; 窗口转换
+;; switch windows
 (global-set-key (kbd "C-<left>") 'windmove-left)
 (global-set-key (kbd "C-<right>") 'windmove-right)
 (global-set-key (kbd "C-<up>") 'windmove-up)
 (global-set-key (kbd "C-<down>") 'windmove-down)
+
 ;; (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-x l") 'goto-line)
@@ -39,16 +40,28 @@
 
 ;; ibuffer
 (require 'ibuffer)
-(global-set-key [(f4)] 'ibuffer)(display-time-mode 1)
 
 ;; ispell
-(global-set-key [f8] 'ispell-region)
 
 ;; whitespace mode
 (global-set-key (kbd "C-x w") 'whitespace-mode)
 (global-set-key (kbd "C-x t") 'whitespace-toggle-options)
 
-;; (global-set-key [f11] 'my-fullscreen)
+(global-set-key [f11] 'toggle-frame-fullscreen)
+
+(global-set-key [f4] 'ibuffer)(display-time-mode 1)
+(global-set-key [f5] 'revert-buffer)
+(global-set-key [f6] 'other-frame)
+(global-set-key [f7] 'eval-buffer)
+(global-set-key [f8] 'eshell)
+(global-set-key [f9] 'ispell-region)
+
+(global-set-key (kbd "C-x <right>") 'other-frame)
+
+;; (defun other-window-visible ()  
+;;   (interactive)  
+;;   (other-window 0 'visible))  
+;; (global-set-key "\C-x5oo" 'other-window-visible)  
 
 ;; ;全屏
 ;; (defun my-fullscreen ()

@@ -58,6 +58,10 @@
 
 (global-set-key (kbd "C-x <right>") 'other-frame)
 
+
+(require 'etags)
+(global-set-key (kbd "M-,") 'tags-loop-continue)
+
 ;; (defun other-window-visible ()  
 ;;   (interactive)  
 ;;   (other-window 0 'visible))  

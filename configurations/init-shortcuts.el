@@ -43,16 +43,32 @@
 
 ;; ispell
 
+
+;; make "C-t" my comand prefix
+
+;; unset a key
+(global-unset-key (kbd "C-t"))
+;; orginal command is "transpose words"
+(global-unset-key (kbd "M-t"))
+
 ;; whitespace mode
-(global-set-key (kbd "C-x w") 'whitespace-mode)
-(global-set-key (kbd "C-x t") 'whitespace-toggle-options)
+(global-set-key (kbd "M-t M-w") 'whitespace-mode)
+
+;; truncate mode
+(global-set-key (kbd "M-t M-t") 'toggle-truncate-lines)
+
+;; menu bar
+(global-set-key (kbd "M-t M-m") 'menu-bar-mode)
+
+;; eval buffer
+(global-set-key (kbd "M-t M-e") 'eval-buffer)
+
 
 (global-set-key [f11] 'toggle-frame-fullscreen)
 
 (global-set-key [f4] 'ibuffer)(display-time-mode 1)
 (global-set-key [f5] 'revert-buffer)
 (global-set-key [f6] 'other-frame)
-(global-set-key [f7] 'eval-buffer)
 (global-set-key [f8] 'eshell)
 (global-set-key [f9] 'ispell-region)
 

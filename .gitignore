@@ -46,9 +46,11 @@ Temporary Items
 auto-save-list*
 ac-comphist.dat*
 elpa
+el-get
 eshell
 color-theme
 ido.last
 server
 plugins
 url
+*~

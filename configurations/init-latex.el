@@ -1,16 +1,16 @@
 ;; +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ;; filename:	init-latex
-;; author:	toothache
+;; author:	    toothache
 ;; time:       	Thu Jan 16 15:27:26 2014
 ;; version:    	1.2
 ;; modified:   	Thu Jan 16 16:27:26 2014
 ;; description: v1.1 1) Add comments 2) auto-complete
-;; 		v1.2 1) RefTeX support
+;; 		        v1.2 1) RefTeX support
 ;; +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ;; This line tells emacs where to find the latex compiler
 (add-to-list 'load-path 
-	     "~/.emacs.d/elpa/auctex-11.88.3")
+	     "~/.emacs.d/elpa/auctex-11.89.1")
 
 (load "auctex.el" nil t t) 
 ;; (load "preview-latex.el" nil t t) 
@@ -56,14 +56,13 @@
 	    (define-key LaTeX-mode-map (kbd "s-q s-w")
 	    'preview-clearout-document) ))
 
-
 ;; 设置 Open 作为 Mac OS 下的 pdf 浏览器
-(setq TeX-view-program-selection 
-      '(((output-dvi style-pstricks)
-	 "dvips and PDF Viewer")
-	(output-dvi "PDF Viewer") 
-	(output-pdf "PDF Viewer") 
-	(output-html "Safari")))
+;; (setq TeX-view-program-selection 
+;;       '(((output-dvi style-pstricks)
+;; 	 "dvips and PDF Viewer")
+;; 	(output-dvi "PDF Viewer") 
+;; 	(output-pdf "PDF Viewer") 
+;; 	(output-html "Safari")))
 
 ;; (setq TeX-view-program-list 
 ;;       '(("dvips and PDF Viewer" "%(o?)dvips %d -o && open %f") 

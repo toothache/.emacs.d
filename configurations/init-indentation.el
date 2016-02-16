@@ -1,3 +1,5 @@
+(set-default 'truncate-lines t)
+
 (c-add-style "microsoft"
              '("linux"
                (c-basic-offset . 4)     ; Guessed value

@@ -1,8 +1,8 @@
 
-(setenv "PATH" (concat "C:\\Users\\tooth_000\\AppData\\Roaming\\.emacs.d\\plugins\\gnu-tags\\bin;" (getenv "PATH")))
+(setenv "PATH" (concat "~\\.emacs.d\\plugins\\gnu-tags\\bin;" (getenv "PATH")))
 
 (setq exec-path (append exec-path
-'("C:\\Users\\tooth_000\\AppData\\Roaming\\.emacs.d\\plugins\\gnu-tags\\bin")))
+'("~\\.emacs.d\\plugins\\gnu-tags\\bin")))
 
 (add-to-list 'load-path 
 	     "~/.emacs.d/plugins/gnu-tags/share/gtags")

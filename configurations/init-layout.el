@@ -1,6 +1,7 @@
 (custom-set-variables 
  '(display-time-mode t) 
- '(size-indication-mode t) 
+ '(size-indication-mode t)
+ '(menu-bar-mode nil)
  '(tool-bar-mode nil)
  '(truncate-partial-width-windows nil))
 
